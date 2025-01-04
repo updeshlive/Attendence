@@ -305,7 +305,7 @@ select {
   z-index: 0;
   top: 0;
   left: 0;
-  background-color: transparent;
+  background: URL('https://img.freepik.com/free-vector/blue-tartan-seamless-pattern-background-vector-template_53876-140702.jpg?semt=ais_hybrid');
   backdrop-filter: blur(1px);
   overflow-y: auto;
   transition: 0.5s ease-in-out;
