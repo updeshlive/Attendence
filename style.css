@@ -23,8 +23,8 @@ body::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   padding: 10px 10px 50px;
-  min-height: 100vh;
-  background-color: #00113a4f;
+  min-height: 60vh;
+  background-color: transparent;
 }
 
 form h1 {
