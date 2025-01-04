@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+</head>
+
+<body>
+
+    </script>
+    <div id="myNav" class="overlay1">
+        <div class="overlay1-content">
+           
+            <div class="container">
+                <form method="post" name="CreateBooking" class="booking-card" >
+
+                    <h1>Updesh Attendence</h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="inputBox">
+                                <label>Full Name</label>
+                                <input type="text" id="fname" name="Name" placeholder=" " required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputBox">
+                                <label>Screenshot</label>
+                                <input type="file" id="lname" name="Screenshot" placeholder=" " required>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+
+                    <div class="row">
+                        <div class="col">
+                           
+                            <div class="inputBox subm" style="display: flex;">
+                                <button type="submit" class="submit-btn">Hariiibol!!</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbwOqd4UR-CL9XpVdpc7UqB05LORD3yTgqLN6pK11_KpLdif465t_vRkGL8RlzFE_bIW0Q/exec'
+  const form = document.forms['CreateBooking']
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => swal("Hare Krishna 🙏", "Your attendance has been marked successfully", "success"))
+      
+  })
+    </script>
+
+
+
+
+
+</body>
+
+</html>

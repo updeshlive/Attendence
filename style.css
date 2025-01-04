@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;300;400;500;600;800&display=swap');
+
+body::-webkit-inner-spin-button {
+  font-family: Nunito;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all .2s linear;
+}
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 50px;
+  min-height: 100vh;
+  background-color: #00113a4f;
+}
+
+form h1 {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 20px;
+  letter-spacing: -2px;
+}
+
+form h4 {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 20px;
+  letter-spacing: -1px;
+}
+
+form {
+  padding: 20px 40px 0;
+  border-radius: 5px;
+  width: 1060px;
+  background: #fff;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .3);
+}
+
+
+
+
+form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+form .row .col {
+  flex: 1 1 250px;
+}
+
+form .row .col .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+}
+
+form .row .col .inputBox {
+  margin: 0 0 15px;
+  width: 100%;
+  padding: 0 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+form .row .col .subm {
+  display: flex;
+  margin: 0 0 -25px;
+}
+
+form .row .col .inputBox label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #646464;
+}
+
+form .row .col .inputBox input,
+form .row .col .inputBox select {
+  width: 100%;
+  height: 35px;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0 5px 15px;
+  font-size: 15px;
+}
+
+form .row .col .inputBox input:focus,
+form .row .col .inputBox select:focus {
+  border-bottom: 1px solid #507cda65;
+}
+
+
+
+form .row .col .flex {
+  display: flex;
+  gap: 0px;
+
+}
+
+form .row .col .flex .inputBox {
+  margin-bottom: 15px;
+
+}
+
+span {
+  cursor: pointer;
+}
+
+.minus,
+.plus {
+  width: 14%;
+  height: 37px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #232f3e;
+  background: #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  transition: 0.2s;
+}
+
+.minus:hover,
+.plus:hover {
+  background: #232f3e;
+  color: #fff;
+}
+
+.budget {
+  width: 69%;
+  height: 37px;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #646464;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nr {
+  color: #646464;
+  font-size: xx-small;
+  font-style: italic;
+  font-weight: lighter; 
+}
+
+
+form .submit-btn {
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  border: 5px solid #fff;
+  font-size: 17px;
+  font-weight: 600;
+  background: #3f51b5;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .3);
+
+}
+
+form .submit-btn:hover {
+  background: #232f3e;
+}
+
+select {
+  -webkit-appearance: none;
+  /* For WebKit browsers (Chrome, Safari) */
+  appearance: none;
+  /* For other browsers */
+}
+
+.ui-datepicker .ui-datepicker-header {
+  background: #fff !important;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  font-family: Nunito;
+  padding: 0 0 0 10px;
+}
+
+
+.material-icons {
+  position: relative;
+  top: .3rem;
+}
+
+.near {
+  position: relative;
+  top: .5rem;
+}
+
+.explore-body {
+  display: flex;
+  background-image: url(/hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  justify-content: left;
+}
+
+.hero-inner {
+  display: flex;
+  padding: 25px 25px 50px;
+  width: 100%;
+  justify-content: left;
+}
+
+.hero-container {
+  display: flex;
+  max-width: 970px;
+  min-width: 300px;
+  width: 70%;
+  justify-content: center;
+}
+
+.explore-card {
+  max-width: 300px;
+  padding: 20px 10px 0;
+  align-self: left;
+}
+
+
+
+@media only screen and (max-width: 540px) {
+  form {
+    padding: 20px 10px 0;
+
+  }
+
+  .explore-body {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-inner {
+    justify-content: center;
+  }
+}
+
+
+
+/* Editor CSS */
+.editors {
+  position: relative;
+  width: 33%;
+  height: 50px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Booking dropdown CSS */
+
+.overlay1 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  backdrop-filter: blur(1px);
+  overflow-y: auto;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+  display: block;
+  animation: smooth 0.2s ease-in-out;
+}
+
+@keyframes smooth {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+  }
+
+.overlay1::-webkit-scrollbar {
+  display: block;
+}
+
+.overlay1-content {
+  position: relative;
+  top: 0;
+  width: 100%;
+
+  /* margin-top: 30px; */
+}
+
+.overlay1 a {
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+}
+
+.overlay1 .closebtn {
+  position: absolute;
+  padding: 0 10px;
+  background-color: #d40059;
+  top: 0;
+  right: 2.5%;
+  font-size: 30px;
+  font-weight: bolder;
+  z-index: 1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay1 {
+    overflow-y: auto;
+  }
+
+  .overlay1 a {
+    font-size: 20px
+  }
+
+  .overlay1 .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#lname {
+padding: 0;
+}
+
+
+input[type="file"]::file-selector-button {
+  font-family: Nunito;
+  background-color: #4c6faf;
+  color: white;
+  padding: 7px 20px;
+  border: none;
+  cursor: pointer;}
