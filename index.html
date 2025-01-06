@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +42,7 @@
                         <div class="col">
                            
                             <div class="inputBox subm" style="display: flex;">
-                                <button type="submit" class="submit-btn">Submit<i class="material-icons near">arrow_forward</i></button>
+                                <button type="submit" onclick="disable()" id="myid" class="submit-btn">Submit<i class="material-icons near">arrow_forward</i></button>
                             </div>
                         </div>
                     </div>
@@ -51,6 +52,12 @@
     </div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
+function disable() {
+document.getElementById('myid').style.display = 'none';
+
+}
+
+
         let currentDateTime = new Date(); 
 document.getElementById('date').value = currentDateTime;
           const scriptURL = 'https://script.google.com/macros/s/AKfycbwOqd4UR-CL9XpVdpc7UqB05LORD3yTgqLN6pK11_KpLdif465t_vRkGL8RlzFE_bIW0Q/exec'
@@ -63,9 +70,6 @@ document.getElementById('date').value = currentDateTime;
       
   })
     </script>
-
-
-
 
 
 </body>
